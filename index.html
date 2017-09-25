@@ -2,58 +2,194 @@
 <html lang="en">
     <head>
         <title>Bootstrap Test</title>
-        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
+       
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <style>
-           
-        
-        
+            nav {
+                background-color: #15344c;
+            }
+
+            .logo {
+                background-image: url(images/vista.png);
+                background-size: cover;
+                background-position: -13px 97px;
+                height: 45px;
+                width: 163px;
+            }
+
+            #mainPicture {
+                background-image: url(images/pexels-photo-167699.jpeg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
         </style>
     </head>
     <body>
-        <div class="jumbotron jumbotron-fluid bg-warning text-white main-picture">
+        <nav class="navbar navbar-toggleable-sm navbar-inverse sticky-top">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="https://github.com/agzaim/" target="_blank">
+                    <div class="logo">
+                    </div>
+                </a>
+                <div class="navbar-collapse collapse" id="navbar-elements">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link pl-4 active" href="#">Home</a>
+                        <a class="nav-item nav-link pl-4" href="#gallery">Gallery</a>
+                        <a class="nav-item nav-link pl-4" href="#cards">Cards</a>
+                        <a class="nav-item nav-link pl-4" href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron jumbotron-fluid bg-primary mb-5 pb-5" id="mainPicture">
             <div class="container">
                 <h1 class="display-3">Bootstrap Test Web</h1>
-                <p class="lead">This is a very simple web page created to testing the Bootstrap's functionality.</p>
+                <p class="lead hidden-sm-down">Simple one page website created to testing <br>the Bootstrap's functionalities.</p>
             </div>
         </div>
 
+        <div class="container mt-5 mb-5">
+            <div class="row mt-5 pt-5">
+                <div class="col-lg-6 col-md-12">
+                    <h3><u>Sheep are herbivores</u></h3>
+                    <p class="pt-3"> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique dictum arcu, in convallis sapien placerat sed. Sed vulputate interdum quam vel sagittis. Sed mattis quam ut turpis vulputate euismod. Pellentesque placerat ligula ac est malesuada, a sagittis ipsum pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec laoreet convallis quam, et consectetur tellus congue hendrerit. Suspendisse potenti. Aliquam arcu tortor, maximus nec lorem sit amet, congue finibus nulla. Cras id augue ac magna convallis.
+                    </p>
+                    <p>
+                        Mauris ac odio massa. Duis quis viverra nulla. Suspendisse elit odio, ornare ut quam vel, accumsan ornare felis. Donec dolor quam, commodo sit amet auctor vehicula, egestas sit amet ipsum. Praesent mollis sem vitae varius semper. Suspendisse finibus dui mauris, sit amet ultricies diam. 
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img src="images/pexels-photo-227691.jpeg" alt="sheep" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-5 pt-5 mb-5" id="gallery">
+            <div class="row mb-2">
+                <div class=" col-md-6 col-lg-3 mb-3">
+                    <img src="images/pexels-photo-236148.jpeg" class="img-thumbnail">
+                </div>
+                <div class=" col-md-6 col-lg-3 mb-3">
+                    <img src="images/pexels-photo-189267.jpeg" class="img-thumbnail">
+                </div>
+                <div class=" col-md-6 col-lg-3 mb-3">
+                    <img src="images/pexels-photo-567953.jpeg" class="img-thumbnail">
+                </div>
+                <div class=" col-md-6 col-lg-3 mb-3">
+                    <img src="images/pexels-photo-373912.jpeg" class="img-thumbnail">
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-md-6 col-lg-3 mb-3">
+                    <img src="images/wall-sport-green-bike.jpg" class="img-thumbnail">
+                </div>
+                <div class=" col-md-6 col-lg-3 mb-3">
+                    <img src="images/pexels-photo-239520.jpeg" class="img-thumbnail">
+                </div>
+                <div class=" col-md-6 col-lg-3 mb-3">
+                    <img src="images/pexels-photo-373465.jpeg" class="img-thumbnail">
+                </div>
+                <div class=" col-md-6 col-lg-3 mb-3">
+                    <img src="images/pexels-photo.jpg" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- doklejanka -->
         <div class="container">
-            <div class="row mt-5">
-                <div class="col-lg-3">
-                    <h3 class="pb-3">It's really hard</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique dictum arcu, in convallis sapien placerat sed. Sed vulputate interdum quam vel sagittis. Sed mattis quam ut turpis vulputate euismod. Pellentesque placerat ligula ac est malesuada, a sagittis ipsum pharetra.
-                    </p>
-                </div>
-                <div class="col-lg-3">
-                    <h3 class="pb-3">To write sth smart</h3>
-                    <p>
-                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec laoreet convallis quam, et consectetur tellus congue hendrerit. Suspendisse potenti. Aliquam arcu tortor, maximus nec lorem sit amet, congue finibus nulla. Cras id augue ac magna convallis auctor.
-                    </p>
-                </div>
-                <div class="col-lg-3">
-                    <h3 class="pb-3">On a simple</h3>
-                    <p>
-                        Mauris ac odio massa. Duis quis viverra nulla. Suspendisse elit odio, ornare ut quam vel, accumsan ornare felis. Donec dolor quam, commodo sit amet auctor vehicula, egestas sit amet ipsum. Praesent mollis sem vitae varius semper. Suspendisse finibus dui mauris, sit amet ultricies diam dignissim ut. 
-                    </p>
-                </div>
-                <div class="col-lg-3">
-                    <h3 class="pb-3">Testing page</h3>
-                    <p>
-                        Maecenas turpis enim, imperdiet fringilla fermentum nec, tempus id nulla. Fusce maximus nunc dictum turpis aliquet vehicula. Suspendisse vel fermentum turpis. Sed accumsan iaculis ante. Donec non malesuada diam. Proin non ante vitae eros bibendum egestas. Suspendisse potenti.
-                    </p>
-                </div>
-            </div>
+        <div class="card-deck">
+  <div class="card col-lg-4 mb-4">
+                              <h4 class="card-header">A simple testing page</h4>
 
+<!--    <img class="card-img-top" src="..." alt="Card image cap">-->
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card col-lg-4 mb-4">
+                              <h4 class="card-header">A simple testing page</h4>
+
+<!--    <img class="card-img-top" src="..." alt="Card image cap">-->
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card col-lg-4 mb-4">
+                              <h4 class="card-header">A simple testing page</h4>
+
+<!--    <img class="card-img-top" src="..." alt="Card image cap">-->
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+
+        <div class="mt-5 container" id="cards">
+            <div class="card-deck">
+<!--                <div class="col-sm-12 col-lg-4 mb-4">-->
+                    <div class="card col-lg-4 mb-4">
+                        <h4 class="card-header">It's really hard to</h4>
+                        <div class="card-block">
+                            <!--                        <h3 class="pb-3"><u>It's really hard to write</u></h3>-->
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique dictum arcu, in convallis sapien placerat sed. Sed vulputate interdum quam vel sagittis. Sed mattis quam ut turpis vulputate euismod. Pellentesque placerat ligula ac est malesuada, a sagittis ipsum pharetra.
+                            </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary">Click me!</a>
+                            </div>
+                        </div>
+<!--                    </div>-->
+                </div>
+<!--                <div class="col-sm-12 col-lg-4 mb-4">-->
+                    <div class="card col-lg-4 mb-4">
+                        <h4 class="card-header">Write sth smart on</h4>
+                        <div class="card-block">
+                            <!--                        <h4 class="pb-3 card-title"><u>Sth smart on a simple</u></h4>-->
+                            <p>
+                                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec laoreet convallis quam, et consectetur tellus congue hendrerit. Suspendisse potenti. Aliquam arcu tortor, maximus nec lorem sit amet, congue finibus nulla. Cras id augue ac magna convallis.
+                            </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-outline-primary">Me too!</a>
+                            </div>
+                        </div>
+<!--                    </div>-->
+                </div>
+<!--                <div class="col-sm-12 col-lg-4 mb-4">-->
+                    <div class="card card-outline-primary col-lg-4 mb-4">
+                        <h4 class="card-header">A simple testing page</h4>
+                        <div class="card-block">
+                            <!--                        <h3 class="pb-3"><u>Testing web page</u></h3>-->
+                            <p>
+                                Mauris ac odio massa. Duis quis viverra nulla. Suspendisse elit odio, ornare ut quam vel, accumsan ornare felis. Donec dolor quam, commodo sit amet auctor vehicula, egestas sit amet ipsum. Praesent mollis sem vitae varius semper. Suspendisse finibus dui mauris, sit amet ultricies diam. 
+                            </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary ">And me!</a>
+                            </div>
+                        </div>
+                    </div>
+<!--                </div>-->
+            </div>
         </div>
 
 
-        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
