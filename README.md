@@ -2,7 +2,7 @@
 Simple one page website created to test Bootstrap 4 functionalities. It is almost completely built with Bootstrap stylesheet.
 </br>
 </br>
-Thanks to Boostrap grip system webpage is fully responsive. It looks good at DESKTOPS:
+Thanks to Boostrap grid system webpage is fully responsive. It looks good at DESKTOPS:
 </br>
 </br>
 ![alt text](https://user-images.githubusercontent.com/24686250/31048672-601e9616-a622-11e7-96a5-0afa1e36b791.PNG)
